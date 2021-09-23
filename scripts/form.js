@@ -5,7 +5,20 @@ function scrollInformation() {
     window.scroll(0, 530)
 }
 function simulate(step) {
-    console.log(step);
+    let valorCasa = document.getElementById('cost-house2').value
+    let dineroPorcentual = document.getElementById('porcent').value
+    let years = document.getElementById('years').value
+    let value = document.getElementsByClassName('value')[0]
+    let price = document.getElementsByClassName('price')[0]
+    if (step == 1 && valorCasa && dineroPorcentual && years) {
+        console.log(valorCasa);
+        console.log(dineroPorcentual);
+        let total = (valorCasa * dineroPorcentual) / 100
+        value.innerHTML = 'asdasd'
+        total = total / (12 * years)
+        price.innerHTML = total.toFixed(3)
+
+    }
     if (step == 5) {
         dialog.setAttribute('style', 'display: none')
     }

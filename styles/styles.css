@@ -495,7 +495,7 @@ header .container-header .link-credit {
 }
 
 .container-all .container-steps .content-info .information input::-webkit-input-placeholder, .container-all .container-steps .content-info .information select::-webkit-input-placeholder, .container-all .container-steps .content-info .information .value::-webkit-input-placeholder {
-  color: #000;
+  color: grey;
   font-family: "Roboto-regular";
   font-style: normal;
   font-weight: normal;
@@ -503,7 +503,7 @@ header .container-header .link-credit {
 }
 
 .container-all .container-steps .content-info .information input:-ms-input-placeholder, .container-all .container-steps .content-info .information select:-ms-input-placeholder, .container-all .container-steps .content-info .information .value:-ms-input-placeholder {
-  color: #000;
+  color: grey;
   font-family: "Roboto-regular";
   font-style: normal;
   font-weight: normal;
@@ -511,7 +511,7 @@ header .container-header .link-credit {
 }
 
 .container-all .container-steps .content-info .information input::-ms-input-placeholder, .container-all .container-steps .content-info .information select::-ms-input-placeholder, .container-all .container-steps .content-info .information .value::-ms-input-placeholder {
-  color: #000;
+  color: grey;
   font-family: "Roboto-regular";
   font-style: normal;
   font-weight: normal;
@@ -519,7 +519,7 @@ header .container-header .link-credit {
 }
 
 .container-all .container-steps .content-info .information input::placeholder, .container-all .container-steps .content-info .information select::placeholder, .container-all .container-steps .content-info .information .value::placeholder {
-  color: #000;
+  color: grey;
   font-family: "Roboto-regular";
   font-style: normal;
   font-weight: normal;
