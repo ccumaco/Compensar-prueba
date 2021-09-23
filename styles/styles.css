@@ -1,0 +1,513 @@
+@font-face {
+  font-family: 'Roboto-medium';
+  src: url(./../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url(./../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url(./../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 120px;
+  z-index: 1;
+}
+
+header .container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header .container-header .logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container-header .logo-link .image-logo {
+  max-height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .container-header .logo-link .link-home {
+  margin-left: 2rem;
+  color: #000;
+  border-bottom: 1px solid #FF6600;
+  text-decoration: none;
+  font-family: 'Roboto-bold';
+  font-weight: bold;
+}
+
+header .container-header .link-credit {
+  font-family: 'Roboto-bold';
+  font-weight: bold;
+  color: #fff;
+  background-color: #2A6BE9;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+}
+
+.background {
+  background: url(./../images/background.jpg) center no-repeat;
+  background-size: 100% 100%;
+  background-position-y: -70px;
+}
+
+.background .banner {
+  padding: 2rem 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.background .banner .content .title-banner {
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #404040;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.background .banner .content .go-to-form {
+  color: #fff;
+  background: #2A6BE9;
+  font-family: "Roboto-bold";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+}
+
+.background .banner .apto-image {
+  max-height: 400px;
+  max-width: 430px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+
+.container-all {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem 120px 7rem;
+}
+
+.container-all .subtitle-info {
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 27px;
+  color: #000;
+}
+
+.container-all .ul-list {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container-all .ul-list li {
+  list-style: none;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  margin: 0.5rem 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.container-all .ul-list li::before {
+  margin-right: 0.5rem;
+  content: "--";
+  color: transparent;
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 3px solid #FF6600;
+}
+
+.container-all .container-steps {
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+
+.container-all .container-steps .title {
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #000;
+}
+
+.container-all .container-steps .paragraph {
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #C4C4C4;
+  margin-bottom: 1rem;
+}
+
+.container-all .container-steps .content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.container-all .container-steps .content-info .steps {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 1rem;
+}
+
+.container-all .container-steps .content-info .steps ul .step {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  padding: 0.5rem;
+}
+
+.container-all .container-steps .content-info .steps ul .step .circle {
+  background: #FFC998;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  border: 1px solid #FF8008;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FF6600;
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #FF6600;
+}
+
+.container-all .container-steps .content-info .steps ul .step.active {
+  background: #E7E7E7;
+  border-radius: 30px;
+}
+
+.container-all .container-steps .content-info .steps ul .step.active .circle {
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  border: 1px solid #FF8008;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FF6600;
+}
+
+.container-all .container-steps .content-info .information {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 30px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container-all .container-steps .content-info .information.active {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-all .container-steps .content-info .information.form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-all .container-steps .content-info .information.form .simulation {
+  width: 100%;
+}
+
+.container-all .container-steps .content-info .information.form .container-input {
+  margin-top: 1rem;
+  width: calc(50% - 2rem);
+  padding: 0 1rem 0 0;
+}
+
+.container-all .container-steps .content-info .information.form .container-input input {
+  width: 100%;
+}
+
+.container-all .container-steps .content-info .information.form .inner-document {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-all .container-steps .content-info .information.form .inner-document input {
+  border-bottom: 0;
+}
+
+.container-all .container-steps .content-info .information .simulation {
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.container-all .container-steps .content-info .information #cost-house2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container-all .container-steps .content-info .information .items-checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0.5rem 0;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.container-all .container-steps .content-info .information .items-checked img {
+  margin-right: 0.5rem;
+}
+
+.container-all .container-steps .content-info .information label {
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0.5rem 0 0.1rem;
+  color: #C4C4C4;
+}
+
+.container-all .container-steps .content-info .information .porcentaje {
+  margin: 0.5rem 0;
+}
+
+.container-all .container-steps .content-info .information input, .container-all .container-steps .content-info .information select, .container-all .container-steps .content-info .information .value {
+  border-radius: 0px;
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding: 0.4rem 1rem;
+  outline: none;
+  color: #000;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.container-all .container-steps .content-info .information input::-webkit-input-placeholder, .container-all .container-steps .content-info .information select::-webkit-input-placeholder, .container-all .container-steps .content-info .information .value::-webkit-input-placeholder {
+  color: #000;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.container-all .container-steps .content-info .information input:-ms-input-placeholder, .container-all .container-steps .content-info .information select:-ms-input-placeholder, .container-all .container-steps .content-info .information .value:-ms-input-placeholder {
+  color: #000;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.container-all .container-steps .content-info .information input::-ms-input-placeholder, .container-all .container-steps .content-info .information select::-ms-input-placeholder, .container-all .container-steps .content-info .information .value::-ms-input-placeholder {
+  color: #000;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.container-all .container-steps .content-info .information input::placeholder, .container-all .container-steps .content-info .information select::placeholder, .container-all .container-steps .content-info .information .value::placeholder {
+  color: #000;
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.container-all .container-steps .content-info .information input#years, .container-all .container-steps .content-info .information select#years, .container-all .container-steps .content-info .information .value#years {
+  text-align: center;
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.container-all .container-steps .content-info .information .price {
+  font-family: "Roboto-regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0.5rem 0;
+  color: #000000;
+}
+
+.container-all .container-steps .content-info .information .do-simulation {
+  padding: 0.6rem 2rem;
+  border: 0;
+  color: #fff;
+  background: #FF6600;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Roboto-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container-all .container-steps .content-info .information .container-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-all .container-steps .content-info .information .container-btns .come-back {
+  font-family: "Roboto-regular";
+  background: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: underline;
+  border: 0;
+  outline: none;
+  color: #868686;
+}
+
+.dialog {
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #060606ab;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.dialog .content {
+  background: #fff;
+  padding: 2rem;
+  font-family: 'Roboto-Bold';
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

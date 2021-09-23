@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="logo-link">
+                <a href="/">
+                    <img class="image-logo" src="./../images/compensar.png" alt="logo compensar">
+                </a>
+                <a class="link-home" href="#">Inicio</a>
+            </div>
+            <a class="link-credit" href="#">Adquiere tu credito</a>
+        </div>
+    </header>
+    <div class="background">
+        <div class="banner">
+            <div class="content">
+                <h2 class="title-banner">Compra tu vivienda en pocos pasos obteniendo tu crédito hipotecario.</h2>
+                <a class="go-to-form" href="#information">Adquierelo ya</a>
+            </div>
+            <img class="apto-image" src="./../images/buenvivir-bonaire-fachada.jpg" alt="apartamento">
+        </div>
+    </div>
+    <div class="container-all">
+        <h3 class="subtitle-info">Recuerda tener a la mano:</h3>
+        <ul class="ul-list">
+            <li> Documento de identidad</li>
+            <li> Link o documento informativo de la vivienda</li>
+            <li> Foto personal y de documento de identidad</li>
+        </ul>
+        <div class="container-steps">
+            <h3 class="title">Información</h3>
+            <p class="paragraph">Lee y completa los pasos para obtener tu credito.</p>
+            <div class="content-info">
+                <div class="steps">
+                    <ul>
+                        <li class="step active"><span class="circle">1</span>Simula tu crédito</li>
+                        <li class="step"><span class="circle">2</span>Adjunta los documentos</li>
+                        <li class="step"><span class="circle">3</span>Enviar</li>
+                    </ul>
+                </div>
+                <div class="information active">
+                    <p class="simulation">Simula tu crédito hipotecario</p>
+                    <label for="cost-house">¿Cúal es el valor comercial de la vivienda?</label>
+                    <input required placeholder="$ 1500000" type="number" name="cost-house2" id="cost-house2">
+                    <label for="cost-house2">¿Cuánto dinero necesitas?</label>
+                    <div class="porcentaje">
+                        <select name="asdasd" id="porcent">
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                            <option value="70">70%</option>
+                            <option value="80">80%</option>
+                            <option value="90">90%</option>
+                            <option value="100">100%</option>
+                        </select>
+                        <span>=</span>
+                        <span class="value"> 50000</span>
+                    </div>
+                    <label class="years" for="years">¿A cuantos años?</label>
+                    <input required placeholder="5" type="number" name="years" id="years">
+                    <button onclick="simulate(1)" class="do-simulation">Simular</button>
+                </div>
+                <div class="information ">
+                    <p class="simulation">Cuota fija en pesos</p>
+                    <label for="nothing">Pagarías cuotas mensuales por un valor aproximado de:</label>
+                    <p class="price">$ 2'187.477</p>
+                    <div class="container-btns">
+                        <button class="come-back">Ir atras</button>
+                        <button onclick="simulate(2)" class="do-simulation">Solicitar credito</button>
+                    </div>
+                </div>
+                <div class="information form ">
+                    <p class="simulation">Datos personales</p>
+                    <div class="container-input">
+                        <label for="cost-house">Nombre</label>
+                        <input required placeholder="Tu nombre" type="number" name="cost-house" id="cost-house">
+                    </div>
+                    <div class="container-input">
+                        <label for="cost-house">Apellido</label>
+                        <input required placeholder="Tu apellido" type="number" name="cost-house" id="cost-house">
+                    </div>
+                    <div class="container-input">
+                        <label for="cost-house">Cédula</label>
+                        <input required placeholder="Tu cédula" type="number" name="cost-house" id="cost-house">
+                    </div>
+                    <div class="container-input">
+                        <label for="cost-house">Año de nacimiento</label>
+                        <input required placeholder=" " type="date" name="cost-house" id="cost-house">
+                    </div>
+                    <div class="inner-document">
+                        <label for="cost-house">Adjunta la foto de tu cedula</label>
+                        <input required placeholder=" " type="file" name="cost-house" id="cost-house">
+                    </div>
+                    <div class="inner-document">
+                        <label for="cost-house">Adjunta tu foto de perfil</label>
+                        <input required placeholder=" " type="file" name="cost-house" id="cost-house">
+                    </div>
+                    <button  onclick="simulate(3)" class="do-simulation">Simular</button>
+                </div>
+                <div class="information ">
+                    <p class="simulation">Cuota fija en pesos</p>
+                    <p class="items-checked"><img src="./../images/svg-check.svg" alt="checked"> Simulacion de tu crédito</p>
+                    <p class="items-checked"><img src="./../images/svg-check.svg" alt="checked"> Documentacion adjuntada</p>
+                    <button onclick="simulate(4)" class="do-simulation">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="content">
+            <h3>Gracias por registrarte</h3>
+            <p>te contactaremos dentro de poco</p>
+            <button class="close-modal" onclick="simulate(5)">cerrar</button>
+        </div>
+    </div>
+</body>
+<script src="./../scripts/form.js"></script>
+</html>

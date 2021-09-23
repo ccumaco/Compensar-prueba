@@ -1,0 +1,376 @@
+$primary-color-orange: #FF6600;
+$secondary-color-blue: #2A6BE9;
+$tertiary-color-white: #fff;
+$forth-color-black: #000;
+$max-width: 1300px;
+$radius: 30px;
+$button: 0.4rem 1rem;
+$fifty-color-grey: #C4C4C4;
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url(./../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(./../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(./../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 120px;
+    z-index: 1;
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $max-width;
+        margin: 0 auto;
+        .logo-link {
+            display: flex;
+            align-items: center;
+
+            .image-logo {
+                max-height: 50px;
+                object-fit: contain;
+            }
+
+            .link-home {
+                margin-left: 2rem;
+                color: $forth-color-black;
+                border-bottom: 1px solid $primary-color-orange;
+                text-decoration: none;
+                font-family: 'Roboto-bold';
+                font-weight: bold;
+            }
+        }
+
+        .link-credit {
+            font-family: 'Roboto-bold';
+            font-weight: bold;
+            color: $tertiary-color-white;
+            background-color: $secondary-color-blue;
+            height: fit-content;
+            text-decoration: none;
+            padding: $button;
+            border-radius: $radius;
+        }
+    }
+}
+.background{
+    background: url(./../images/background.jpg) center no-repeat;
+    background-size: 100% 100%;
+    background-position-y: -70px;
+    .banner{
+        padding: 2rem 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 auto;
+        .content{
+            .title-banner{
+                font-family: "Roboto-bold";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                color: #404040;
+                max-width: 700px;
+                margin-bottom: 2rem;
+                margin-right: 2rem;
+            }
+            .go-to-form{
+                color: $tertiary-color-white;
+                background: $secondary-color-blue;
+                font-family: "Roboto-bold";
+                text-decoration: none;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                padding: $button;
+                border-radius: $radius;
+            }
+        }
+        .apto-image{
+            max-height: 400px;
+            max-width: 430px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: $radius;
+        }
+    }
+}
+.container-all{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 1rem 120px 7rem;
+    .subtitle-info{
+        font-family: "Roboto-bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 27px;
+        color: $forth-color-black;
+    }
+    .ul-list{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+        li{
+            list-style: none;
+            font-family: "Roboto-regular";
+            font-style: normal;
+            font-weight: normal;
+            margin: 0.5rem 0;
+            font-size: 18px;
+            color: $forth-color-black;
+            &::before{
+                margin-right: 0.5rem;
+                content: "--";
+                color: transparent;
+                position: relative;
+                top: -10px;
+                font-weight: bold;
+                font-size: 1rem;
+                border-bottom: 3px solid $primary-color-orange;
+            }
+        }
+    }
+    .container-steps{
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        padding: 1.5rem;
+        .title{
+            font-family: "Roboto-bold";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            color: $forth-color-black;
+        }
+        .paragraph{
+            font-family: "Roboto-regular";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: $fifty-color-grey;
+            margin-bottom: 1rem;
+        }
+        .content-info{
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            .steps{
+                flex-grow: 1;
+                flex-basis: 50%;
+                padding-right: 1rem;
+                ul{
+                    .step{
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        font-family: "Roboto-regular";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        color: $forth-color-black;
+                        padding: 0.5rem;
+                        .circle{
+                            background: #FFC998;
+                            border-radius: 50%;
+                            padding: 0.2rem 0.7rem;
+                            margin-right: 0.5rem;
+                            border: 1px solid #FF8008;
+                            box-sizing: border-box;
+                            color: $primary-color-orange;
+                            font-family: "Roboto-bold";
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 26px;
+                            color: #FF6600;
+                        }
+                        &.active{
+                            background: #E7E7E7;
+                            border-radius: 30px;
+                            .circle{
+                                background: $tertiary-color-white;
+                                border-radius: 50%;
+                                margin-right: 0.5rem;
+                                border: 1px solid #FF8008;
+                                box-sizing: border-box;
+                                color: $primary-color-orange;
+                            }
+                        }
+                    }
+                }
+            }
+            .information{
+                flex-basis: 50%;
+                flex-grow: 1;
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                padding: 1rem;
+                border-radius: 30px;
+                display: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                opacity: 0;
+                transition:  all 1s;
+                &.active{
+                    opacity: 1;
+                    display: flex;
+                }
+                &.form{
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .simulation{
+                        width: 100%;
+                    }
+                    .container-input{
+                        margin-top: 1rem;
+                        width: calc(50% - 2rem) ;
+                        padding: 0 1rem 0 0;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .inner-document{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        input{
+                            border-bottom: 0;
+                        }
+                    }
+                }
+                    
+                .simulation{
+                    font-family: "Roboto-regular";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+                #cost-house2{
+                    width: fit-content;
+                }
+                .items-checked{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin: 0.5rem 0;
+                    font-family: "Roboto-regular";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $forth-color-black;
+                    img{
+                        margin-right: 0.5rem;
+                    }
+                }
+                label{  
+                    font-family: "Roboto-regular";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin: 0.5rem 0 0.1rem;
+                    color: #C4C4C4;
+                }
+                .porcentaje{
+                    margin: 0.5rem 0;
+                }
+                input,select,.value{
+                    border-radius: 0px;
+                    border: 0;
+                    border-bottom: 1px solid $forth-color-black;
+                    padding: $button;
+                    outline: none;
+                    color: $forth-color-black;
+                    font-family: "Roboto-regular";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    &::placeholder{
+                        color: $forth-color-black;
+                        font-family: "Roboto-regular";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                    }
+                    &#years{
+                        text-align: center;
+                        width: 80px;
+                        margin-bottom: 1rem;
+                    }
+                }
+                .price{
+                    font-family: "Roboto-regular";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin: 0.5rem 0;
+                    color: #000000;
+                }
+                .do-simulation{
+                    padding: 0.6rem 2rem;
+                    border: 0;
+                    color: $tertiary-color-white;
+                    background: $primary-color-orange;
+                    border-radius: $radius;
+                    width: fit-content;
+                    font-family: "Roboto-bold";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                .container-btns{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    align-items: center;
+                    .come-back{
+                        font-family: "Roboto-regular";
+                        background: $tertiary-color-white;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        text-decoration: underline;
+                        border: 0;
+                        outline: none;
+                        color: #868686;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.dialog{
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #060606ab;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .content{
+        background: #fff;
+        padding: 2rem;
+        font-family: 'Roboto-Bold';
+        text-align: center;
+    }
+}
