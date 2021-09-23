@@ -65,6 +65,9 @@ header {
             text-decoration: none;
             padding: $button;
             border-radius: $radius;
+            border: 0;
+            outline: none;
+            cursor: pointer;
         }
     }
 }
@@ -100,6 +103,9 @@ header {
                 font-size: 24px;
                 padding: $button;
                 border-radius: $radius;
+                border: 0;
+                outline: none;
+                cursor: pointer;
             }
         }
         .apto-image{

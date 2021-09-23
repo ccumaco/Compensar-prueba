@@ -75,6 +75,9 @@ header .container-header .link-credit {
   text-decoration: none;
   padding: 0.4rem 1rem;
   border-radius: 30px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .background {
@@ -119,6 +122,9 @@ header .container-header .link-credit {
   font-size: 24px;
   padding: 0.4rem 1rem;
   border-radius: 30px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .background .banner .apto-image {
