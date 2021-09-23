@@ -27,6 +27,9 @@ $fifty-color-grey: #C4C4C4;
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -94,6 +97,9 @@ header {
     background: url(./../images/background.jpg) center no-repeat;
     background-size: 100% 100%;
     background-position-y: -70px;
+    @include sm{
+        background-position-y: 0px;
+    }
     .banner{
         padding: 2rem 120px;
         display: flex;
@@ -102,7 +108,7 @@ header {
         max-width: $max-width;
         margin: 0 auto;
         @include sm{
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding: 1rem;
             text-align: center;
         }
@@ -117,6 +123,9 @@ header {
                 margin-bottom: 2rem;
                 margin-right: 2rem;
                 @include sm{
+                    margin-top: 1rem;
+                    font-size: 2rem;
+                    text-align: left;
                     margin-right: 0;
                 }
             }
@@ -142,6 +151,7 @@ header {
             object-fit: cover;
             border-radius: $radius;
             @include sm{
+                height: auto;
                 margin-top: 1rem;
                 width: 100%;
             }
@@ -153,7 +163,7 @@ header {
     margin: 0 auto;
     padding: 1rem 120px 7rem;
     @include sm{
-        padding: 0;
+        padding: 1rem;
     }
     .subtitle-info{
         font-family: "Roboto-bold";
@@ -269,6 +279,9 @@ header {
                 justify-content: flex-start;
                 opacity: 0;
                 transition:  all 1s;
+                @include sm{
+                    margin-top: 1rem;
+                }
                 &.active{
                     opacity: 1;
                     display: flex;
@@ -285,6 +298,9 @@ header {
                         width: calc(50% - 2rem) ;
                         padding: 0 1rem 0 0;
                         input{
+                            width: 100%;
+                        }
+                        @include sm{
                             width: 100%;
                         }
                     }
@@ -415,5 +431,17 @@ header {
         padding: 2rem;
         font-family: 'Roboto-Bold';
         text-align: center;
+        .close-modal{
+            width: 100%;
+            background: $secondary-color-blue;
+            color: $tertiary-color-white;
+            border: 0;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 1rem;
+            outline: none;
+            border-radius: $radius;
+            padding: $button;
+        }
     }
 }
