@@ -21,6 +21,12 @@ $fifty-color-grey: #C4C4C4;
     src: url(./../fonts/Roboto-Regular.ttf);
 }
 
+@mixin sm {
+    @media screen and (max-width: 980px) {
+        @content;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,12 +37,19 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 120px;
     z-index: 1;
+    @include sm{
+        padding: 0;
+    }
     .container-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: $max-width;
         margin: 0 auto;
+        @include sm{
+            padding: 1rem 0;
+            justify-content: center;
+        }
         .logo-link {
             display: flex;
             align-items: center;
@@ -53,6 +66,9 @@ header {
                 text-decoration: none;
                 font-family: 'Roboto-bold';
                 font-weight: bold;
+                @include sm{
+                    display: none;
+                }
             }
         }
 
@@ -68,6 +84,9 @@ header {
             border: 0;
             outline: none;
             cursor: pointer;
+            @include sm{
+                display: none;
+            }
         }
     }
 }
@@ -82,6 +101,11 @@ header {
         justify-content: space-between;
         max-width: $max-width;
         margin: 0 auto;
+        @include sm{
+            flex-direction: column;
+            padding: 1rem;
+            text-align: center;
+        }
         .content{
             .title-banner{
                 font-family: "Roboto-bold";
@@ -92,6 +116,9 @@ header {
                 max-width: 700px;
                 margin-bottom: 2rem;
                 margin-right: 2rem;
+                @include sm{
+                    margin-right: 0;
+                }
             }
             .go-to-form{
                 color: $tertiary-color-white;
@@ -114,6 +141,10 @@ header {
             height: 400px;
             object-fit: cover;
             border-radius: $radius;
+            @include sm{
+                margin-top: 1rem;
+                width: 100%;
+            }
         }
     }
 }
@@ -121,6 +152,9 @@ header {
     max-width: $max-width;
     margin: 0 auto;
     padding: 1rem 120px 7rem;
+    @include sm{
+        padding: 0;
+    }
     .subtitle-info{
         font-family: "Roboto-bold";
         font-style: normal;
@@ -176,6 +210,9 @@ header {
             display: flex;
             justify-content: space-between;
             align-content: flex-start;
+            @include sm{
+                flex-direction: column;
+            }
             .steps{
                 flex-grow: 1;
                 flex-basis: 50%;
